@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  ename='xyz';
+  eno=1;
+  emp={'ename':'xyz','eno':1};
+  EmpArr:any[]=[];
+  
+  addToLocalVars(event:any)
+  {
+    console.log(event);
+    this.EmpArr.push(event);
+  }
 }
